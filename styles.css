@@ -11,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: "Roboto", serif;
 }
 
 .caixa-video {
@@ -36,17 +37,25 @@ caixa-video video {
 
 }
 
+section {
+    max-width: 1200px;
+    padding: 3rem 2rem;
+    margin: 0 auto;
+}
+
 .header {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 2;
     background-color: var(--bg);
-    border-bottom: var(--border)
+    border-bottom: var(--border);
+    width: 100vw;
 }
 
 .header section {
     display: flex;
+    align-items: center;
     justify-content: flex-start;
     gap: 50px;
     padding: 1.5rem 0;
@@ -61,4 +70,51 @@ caixa-video video {
     margin: 0 1rem;
     font-size: 1.8;
     color: #fff;
+    transition: 0.4s linear;
+}
+
+.header section nav a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+.caixa-principal {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.caixa-principal div {
+    max-width: 60rem;
+}
+
+.caixa-principal div h3 {
+    color: #fff;
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+.caixa-principal div p {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1 rem 0;
+    line-height: 1.8;
+}
+
+.caixa-principal div a {
+    background-color: var(--main-color);
+    cursor: pointer;
+    margin-top: 2rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    border: none;
+    transition: 0.3s linear;
+}
+
+.caixa-principal div a:hover {
+    letter-spacing: 0.1rem;
 }
