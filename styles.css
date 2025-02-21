@@ -103,7 +103,7 @@ section {
     line-height: 1.8;
 }
 
-.caixa-principal div a {
+.botao-link {
     background-color: var(--main-color);
     cursor: pointer;
     margin-top: 2rem;
@@ -115,6 +115,53 @@ section {
     transition: 0.3s linear;
 }
 
-.caixa-principal div a:hover {
+.botao-link:hover {
     letter-spacing: 0.1rem;
+}
+
+.caixa-sobre h2 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.caixa-sobre h2 span {
+    color: var(--main-color);
+}
+
+.caixa-sobre .sobre-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.caixa-sobre .sobre-container .sobre-imagem {
+    flex: 1 1 45rem;
+}
+
+.caixa-sobre .sobre-container .sobre-imagem img {
+    width: 100%;
+}
+
+.caixa-sobre .sobre-container .sobre-texto {
+    flex: 1 1 45rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.caixa-sobre .sobre-container .sobre-texto h3 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.caixa-sobre .sobre-container .sobre-texto p {
+    font-size: 1.5;
+    font-weight: lighter;
+    color: #fff;
+    line-height: 1.8;
+    padding: 1rem 0;
 }
