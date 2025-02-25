@@ -119,7 +119,7 @@ section {
     letter-spacing: 0.1rem;
 }
 
-.titulo h2 {
+.titulo {
     text-align: center;
     color: #fff;
     text-transform: uppercase;
@@ -176,11 +176,11 @@ section {
     top: 50%;
     left: -30%;
     transform: translate(-50%, -50%);
+    transition: left 1s linear;
 }
 
 .mascara-modal {
     visibility: hidden;
-    transition: visibility 1s linear;
     z-index: 3;
     position: fixed;
     inset: 0;
